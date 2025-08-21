@@ -43,8 +43,8 @@ button {
 /* ================== body ================== */
 body {
   font-family: "Gaura Times Regular";
-/*  font-size: 14px;
-  color: var(--primary-text-color); */
+  font-size: 14px;
+ /* color: var(--primary-text-color); */
 }
 /* ================== /body ================== */
 

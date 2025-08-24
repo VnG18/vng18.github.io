@@ -48,7 +48,7 @@ button {
 /* ================== body ================== */
 body {
   font-family: "Gaura Times Regular";
-  font-size: 14pt;
+  font-size: 16pt;
   /* color: var(--primary-text-color); */
 }
 /* ================== /body ================== */
@@ -64,7 +64,7 @@ body {
 /* ================== components ================== */
 
 .header {
-  font-size: 20pt;
+  font-size: 22pt;
   font-weight: bold;
   text-align: center;
 }

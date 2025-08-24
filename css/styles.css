@@ -43,7 +43,7 @@ button {
 /* ================== body ================== */
 body {
   font-family: "Gaura Times Regular";
-  font-size: 14pt;
+  font-size: 18pt;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
   /* color: var(--primary-text-color); */
@@ -61,7 +61,7 @@ body {
 /* ================== components ================== */
 
 .header {
-  font-size: 20pt;
+  font-size: 22pt;
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
@@ -69,7 +69,7 @@ body {
 }
 
 .post-date {
-  font-size: 12pt;
+  font-size: 13pt;
   font-weight: bold;
   margin-bottom: 5px;
 }

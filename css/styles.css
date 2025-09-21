@@ -75,11 +75,15 @@ body {
 
 @media (max-width: 480px) {
   header {
-    font-size: 18px;
-    padding: 15px;
+    font-size: 26pt;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
   }
 
   .container {
+    font-size: 26pt;
     flex-direction: column; /* в колонку на мобильных */
   }
 }

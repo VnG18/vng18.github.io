@@ -38,6 +38,11 @@ button {
   text-decoration: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* ================== /reset the defaults ================== */
 
 /* ================== body ================== */
@@ -51,14 +56,14 @@ body {
 /* ================== /body ================== */
 
 /* ================== components ================== */
+
 .container {
-  width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  display: flex;
+  flex-wrap: wrap; /* Чтобы блоки переносились */
+  gap: 20px;
+  padding: 10px;
+  margin-left: 250px;
 }
-/* ================== components ================== */
 
 .header {
   font-size: 22pt;
@@ -66,6 +71,17 @@ body {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 100px;
+}
+
+@media (max-width: 480px) {
+  header {
+    font-size: 18px;
+    padding: 15px;
+  }
+
+  .container {
+    flex-direction: column; /* в колонку на мобильных */
+  }
 }
 
 .post-date {

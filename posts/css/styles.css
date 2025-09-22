@@ -1,5 +1,4 @@
-/* ================== reset the defaults ================== */
-
+/* ================== reset ================== */
 h1,
 h2,
 h3,
@@ -7,81 +6,95 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-block-start: 0;
-  margin-block-end: 0;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
-  unicode-bidi: isolate;
+  margin: 0;
 }
-
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
-
-img {
-  display: block;
-}
-
 address {
   font-style: normal;
 }
-
 button {
   cursor: pointer;
 }
-
-.list {
-  list-style: none;
+img {
+  max-width: 100%;
+  height: auto;
 }
-
-.link {
-  text-decoration: none;
-}
-
-/* ================== /reset the defaults ================== */
+/* ================== /reset ================== */
 
 /* ================== body ================== */
 body {
-  font-family: "Gaura Times Regular";
-  font-size: 16pt;
-  /* color: var(--primary-text-color); */
+  font-family: "Gaura Times Regular", serif;
+  font-size: 18pt;
+  background-image: url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* ================== /body ================== */
 
-/* ================== components ================== */
+/* ================== layout ================== */
 .container {
-  width: 600px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 900px;
+  margin: 0 auto; /* центрируем блоки */
+  padding: 10px;
 }
-/* ================== components ================== */
 
 .header {
   font-size: 22pt;
   font-weight: bold;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 60px;
 }
 
-.verse {
-  margin-left: 300px;
+.post-date {
+  font-size: 13pt;
+  font-weight: bold;
+  margin-bottom: 10px;
 }
 
-.photo {
-  margin-left: auto;
-  margin-right: auto;
+.post {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+/* ================== /layout ================== */
+
+/* ================== responsive ================== */
+@media (max-width: 768px) {
+  body {
+    font-size: 14pt;
+  }
+
+  .header {
+    font-size: 18pt;
+    margin-bottom: 40px;
+  }
+
+  .post {
+    flex-direction: column; /* картинка сверху, текст снизу */
+    align-items: flex-start;
+  }
+
+  .container {
+    padding: 5px;
+  }
 }
 
-.section-photo {
-  margin-bottom: 20px;
-}
+@media (max-width: 480px) {
+  body {
+    font-size: 12pt;
+  }
 
-.footer {
-  margin-bottom: 150px;
+  .header {
+    font-size: 16pt;
+  }
+
+  .post img {
+    max-width: 100%;
+  }
 }
+/* ================== /responsive ================== */

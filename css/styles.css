@@ -1,5 +1,4 @@
-/* ================== reset the defaults ================== */
-
+/* ================== reset ================== */
 h1,
 h2,
 h3,
@@ -7,62 +6,40 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
 }
-
 ul,
 ol {
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0;
+  margin: 0;
+  padding: 0;
 }
-
-/* img {
-  display: block;
-} */
-
 address {
   font-style: normal;
 }
-
 button {
   cursor: pointer;
 }
-
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
-}
-
 img {
   max-width: 100%;
   height: auto;
 }
-
-/* ================== /reset the defaults ================== */
+/* ================== /reset ================== */
 
 /* ================== body ================== */
 body {
-  font-family: "Gaura Times Regular";
+  font-family: "Gaura Times Regular", serif;
   font-size: 18pt;
   background-image: url("../images/background.jpg");
   background-repeat: no-repeat;
-  /* color: var(--primary-text-color); */
+  background-size: cover;
 }
 /* ================== /body ================== */
 
-/* ================== components ================== */
-
+/* ================== layout ================== */
 .container {
-  display: flex;
-  flex-wrap: wrap; /* Чтобы блоки переносились */
-  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto; /* центрируем блоки */
   padding: 10px;
-  margin-left: 250px;
 }
 
 .header {
@@ -70,32 +47,54 @@ body {
   font-weight: bold;
   text-align: center;
   margin-top: 20px;
-  margin-bottom: 100px;
-}
-
-@media (max-width: 480px) {
-  header {
-    font-size: 26pt;
-    font-weight: bold;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 50px;
-  }
-
-  .container {
-    font-size: 26pt;
-    flex-direction: column; /* в колонку на мобильных */
-  }
+  margin-bottom: 60px;
 }
 
 .post-date {
   font-size: 13pt;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .post {
   display: flex;
-  align-items: center; /* выравнивание по вертикали */
-  gap: 10px; /* отступ между картинкой и ссылкой */
+  align-items: center;
+  gap: 15px;
 }
+/* ================== /layout ================== */
+
+/* ================== responsive ================== */
+@media (max-width: 768px) {
+  body {
+    font-size: 14pt;
+  }
+
+  .header {
+    font-size: 18pt;
+    margin-bottom: 40px;
+  }
+
+  .post {
+    flex-direction: column; /* картинка сверху, текст снизу */
+    align-items: flex-start;
+  }
+
+  .container {
+    padding: 5px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 12pt;
+  }
+
+  .header {
+    font-size: 16pt;
+  }
+
+  .post img {
+    max-width: 100%;
+  }
+}
+/* ================== /responsive ================== */

@@ -23,6 +23,12 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container img {
+  display: block; /* Превращаем изображение в блочный элемент */
+  margin-left: auto;
+  margin-right: auto;
+}
 /* ================== /reset ================== */
 
 /* ================== body ================== */
@@ -50,6 +56,11 @@ body {
   margin-bottom: 60px;
 }
 
+.photo-paragraph {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .post-date {
   font-size: 13pt;
   font-weight: bold;
@@ -63,14 +74,14 @@ body {
 }
 
 .verse {
-  margin-left: 450px;
+  margin-left: 600px;
 }
 /* ================== /layout ================== */
 
 /* ================== responsive ================== */
 @media (max-width: 768px) {
   body {
-    font-size: 14pt;
+    font-size: 15pt;
   }
 
   .header {
@@ -86,20 +97,24 @@ body {
   .container {
     padding: 5px;
   }
+
+  .verse {
+    margin-left: 150px;
+  }
 }
 
 @media (max-width: 480px) {
   body {
-    font-size: 12pt;
+    font-size: 13pt;
   }
 
   .header {
     font-size: 16pt;
   }
 
-  .post img {
+  /* .post img {
     max-width: 100%;
-  }
+  } */
 
   .verse {
     margin-left: 100px;

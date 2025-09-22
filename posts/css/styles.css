@@ -61,6 +61,10 @@ body {
   align-items: center;
   gap: 15px;
 }
+
+.verse {
+  margin-left: 450px;
+}
 /* ================== /layout ================== */
 
 /* ================== responsive ================== */
@@ -95,6 +99,10 @@ body {
 
   .post img {
     max-width: 100%;
+  }
+
+  .verse {
+    margin-left: 100px;
   }
 }
 /* ================== /responsive ================== */
